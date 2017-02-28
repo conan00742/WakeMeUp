@@ -2,6 +2,8 @@ package com.example.khiemichigo.wakemeup;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -13,6 +15,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
@@ -102,7 +105,13 @@ public class AddAlarmClock extends AppCompatActivity{
     }
 
     private void openRingtoneIntentFilter() {
+        /*Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        File file = new File("/storage/sdcard0/my_music/");
+        intent.setDataAndType(Uri.fromFile(file), "audio*//*");
+        startActivity(intent);*/
 
+        startActivity(new Intent(AddAlarmClock.this, DisplayMusicList.class));
     }
 
     //timePickerDialog
