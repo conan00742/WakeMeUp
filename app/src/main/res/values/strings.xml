@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WakeMeUp</string>
+    <string name="alarm_title">Time</string>
+    <string name="alarm_frequency_title">Frequency</string>
+    <string name="alarm_repeat_after_title">Repeat after</string>
+    <string name="alarm_ringtone_title">Alarm ringtone</string>
+    <string name="alarm_vibration_title">Vibration</string>
+</resources>

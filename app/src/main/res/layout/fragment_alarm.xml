@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.khiemichigo.wakemeup.fragment.AlarmFragment">
+
+    <AnalogClock
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/analogClock" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_below="@id/analogClock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:padding="20dp"
+            android:layout_below="@id/analogClock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom|end"
+            app:backgroundTint="#FF0000"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_anchor="@id/recyclerView"
+            app:layout_anchorGravity="bottom|right|end"
+            android:src="@drawable/ic_alarm_add_white_18dp"
+            />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

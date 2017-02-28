@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.khiemichigo.wakemeup.AddAlarmClock">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <!-- Time -->
+        <LinearLayout
+            android:id="@+id/timeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_background_selector"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AddAlarmTitle"
+                android:text="@string/alarm_title" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/AddAlarmValue"
+                tools:text="17:08" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+        <!-- Repeat -->
+        <LinearLayout
+            android:id="@+id/frequencyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_background_selector"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AddAlarmTitle"
+                android:text="@string/alarm_frequency_title" />
+
+            <TextView
+                android:id="@+id/repeat"
+                style="@style/AddAlarmValue"
+                tools:text="Mon, Tues, Wed, Thurs, Fri" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+
+        <!-- Alarm Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AddAlarmTitle"
+                android:text="Content" />
+
+            <EditText
+                android:id="@+id/edtContent"
+                style="@style/AddAlarmValue" />
+
+        </LinearLayout>
+
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:text="Sound and Vibration"
+            android:textColor="#0022F9"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <!-- Ringtone -->
+        <LinearLayout
+            android:id="@+id/ringtoneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_background_selector"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AddAlarmTitle"
+                android:text="@string/alarm_ringtone_title" />
+
+            <TextView
+                android:id="@+id/ringtone"
+                style="@style/AddAlarmValue"
+                tools:text="(Default)" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+        <!-- Volume -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AddAlarmTitle"
+                android:text="Volume" />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/volumeSeekbar"
+                style="@android:style/Widget.DeviceDefault.SeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+        <!-- Repeat time -->
+        <LinearLayout
+            android:id="@+id/repeatLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_background_selector"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AddAlarmTitle"
+                android:text="@string/alarm_repeat_after_title" />
+
+            <TextView
+                android:id="@+id/repeatTime"
+                style="@style/AddAlarmValue"
+                tools:text="10 minutes" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+
+        <!-- Vibration -->
+        <LinearLayout
+            android:id="@+id/vibrationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_background_selector"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/AddAlarmVibrationTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/alarm_vibration_title" />
+
+            <CheckBox
+                android:id="@+id/isVibration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+    
