@@ -105,12 +105,6 @@ public class AddAlarmClock extends AppCompatActivity{
     }
 
     private void openRingtoneIntentFilter() {
-        /*Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        File file = new File("/storage/sdcard0/my_music/");
-        intent.setDataAndType(Uri.fromFile(file), "audio*//*");
-        startActivity(intent);*/
-
         startActivity(new Intent(AddAlarmClock.this, DisplayMusicList.class));
     }
 

@@ -99,7 +99,7 @@
             android:textStyle="bold" />
 
 
-        <!-- Ringtone -->
+        <!-- RingtoneObject -->
         <LinearLayout
             android:id="@+id/ringtoneLayout"
             android:layout_width="match_parent"
