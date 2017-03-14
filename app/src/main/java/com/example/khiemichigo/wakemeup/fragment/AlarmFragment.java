@@ -61,6 +61,23 @@ public class AlarmFragment extends Fragment {
 
     private void setUpRecyclerView(){
         RecyclerView recyclerView = (RecyclerView) alarmFragmentView.findViewById(R.id.recyclerView);
+        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+                if(newState == RecyclerView.SCROLL_STATE_IDLE){
+                    fab.show();
+                }
+                super.onScrollStateChanged(recyclerView, newState);
+            }
+
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                if(dy > 0 || dy < 0 && fab.isShown()){
+                    fab.hide();
+                }
+
+            }
+        });
         AlarmAdapter adapter = new AlarmAdapter(getActivity(), Alarm.initData());
         recyclerView.setAdapter(adapter);
 

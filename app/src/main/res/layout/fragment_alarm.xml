@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.khiemichigo.wakemeup.fragment.AlarmFragment">
 
     <AnalogClock
+        android:id="@+id/analogClock"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/analogClock" />
+        android:layout_centerHorizontal="true" />
 
     <android.support.design.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout"
@@ -40,7 +40,13 @@
             />
 
 
+
     </android.support.design.widget.CoordinatorLayout>
 
 
 </RelativeLayout>
+
+    <!--android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="72dp"-->

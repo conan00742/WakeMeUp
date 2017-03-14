@@ -5,4 +5,10 @@
     <string name="alarm_repeat_after_title">Repeat after</string>
     <string name="alarm_ringtone_title">Alarm ringtone</string>
     <string name="alarm_vibration_title">Vibration</string>
+    <string name="repeat_after_five">5 minutes</string>
+    <string name="repeat_after_ten">10 minutes</string>
+    <string name="repeat_after_fifteen">15 minutes</string>
+    <string name="repeat_after_twenty">20 minutes</string>
+    <string name="repeat_after_twenty_five">25 minutes</string>
+    <string name="repeat_after_thirty">30 minutes</string>
 </resources>

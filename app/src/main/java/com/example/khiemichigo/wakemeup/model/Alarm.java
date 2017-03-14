@@ -101,6 +101,42 @@ public class Alarm {
         alarm4.setFrequencies("Everyday");
         mData.add(alarm4);
 
+        Alarm alarm5 = new Alarm();
+        alarm5.setTime("15:00");
+        alarm5.setContent("Gym");
+        alarm5.setFrequencies("Everyday");
+        mData.add(alarm5);
+
+        Alarm alarm6 = new Alarm();
+        alarm6.setTime("15:00");
+        alarm6.setContent("Gym");
+        alarm6.setFrequencies("Everyday");
+        mData.add(alarm6);
+
+        Alarm alarm7 = new Alarm();
+        alarm7.setTime("15:00");
+        alarm7.setContent("Gym");
+        alarm7.setFrequencies("Everyday");
+        mData.add(alarm7);
+
+        Alarm alarm8 = new Alarm();
+        alarm8.setTime("15:00");
+        alarm8.setContent("Gym");
+        alarm8.setFrequencies("Everyday");
+        mData.add(alarm8);
+
+        Alarm alarm9 = new Alarm();
+        alarm9.setTime("15:00");
+        alarm9.setContent("Gym");
+        alarm9.setFrequencies("Everyday");
+        mData.add(alarm9);
+
+        Alarm alarm10 = new Alarm();
+        alarm10.setTime("15:00");
+        alarm10.setContent("Gym");
+        alarm10.setFrequencies("Everyday");
+        mData.add(alarm10);
+
         return mData;
     }
 }
