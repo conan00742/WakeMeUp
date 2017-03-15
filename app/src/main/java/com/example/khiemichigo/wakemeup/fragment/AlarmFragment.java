@@ -10,15 +10,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AnalogClock;
-import android.widget.TimePicker;
+import android.widget.TextClock;
 
 import com.example.khiemichigo.wakemeup.AddAlarmClock;
 import com.example.khiemichigo.wakemeup.R;
 import com.example.khiemichigo.wakemeup.adapter.AlarmAdapter;
 import com.example.khiemichigo.wakemeup.model.Alarm;
-
-import java.util.Calendar;
 
 /**
  * Created by Khiem Ichigo on 1/29/2017.
@@ -27,7 +24,7 @@ import java.util.Calendar;
 public class AlarmFragment extends Fragment {
     private View alarmFragmentView;
     private FloatingActionButton fab;
-    private AnalogClock analogClock;
+    private TextClock textClock;
 
 
     public AlarmFragment() {
@@ -52,7 +49,7 @@ public class AlarmFragment extends Fragment {
             }
         });
 
-        analogClock = (AnalogClock) alarmFragmentView.findViewById(R.id.analogClock);
+        textClock = (TextClock) alarmFragmentView.findViewById(R.id.textClock);
 
         setUpRecyclerView();
 

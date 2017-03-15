@@ -135,33 +135,6 @@ public class AddAlarmClock extends AppCompatActivity {
 
     //repeat time dialog
     private void openRepeatTimeDialog() {
-        /*AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        LayoutInflater inflater = this.getLayoutInflater();
-        View dialogView = inflater.inflate(R.layout.dialog_repeate_time, null);
-        builder.setView(dialogView);
-
-        RadioGroup radioGroup = (RadioGroup) dialogView.findViewById(R.id.repeatTimeRadioGroup);
-        if(radioGroup.getCheckedRadioButtonId() != -1){
-            int id = radioGroup.getCheckedRadioButtonId();
-            View radioButton = radioGroup.findViewById(id);
-            int radioId = radioGroup.indexOfChild(radioButton);
-            RadioButton btn = (RadioButton) radioGroup.getChildAt(radioId);
-            String selectedTime = btn.getText().toString();
-            setRepeatTime(selectedTime);
-        }
-
-
-
-        builder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                alertDialog.dismiss();
-            }
-        });
-
-        alertDialog = builder.create();
-        alertDialog.show();*/
-
 
         final String[] times = new String[]{"5 minutes", "10 minutes", "15 minutes", "20 minutes", "25 minutes", "30 minutes"};
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this)
