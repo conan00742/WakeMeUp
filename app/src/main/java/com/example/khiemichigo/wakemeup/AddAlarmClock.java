@@ -291,6 +291,7 @@ public class AddAlarmClock extends AppCompatActivity {
                     Uri ringtoneUri = data.getParcelableExtra(RingtoneManager.EXTRA_RINGTONE_PICKED_URI);
                     Ringtone ringtone = RingtoneManager.getRingtone(this,ringtoneUri);
                     tvRingtoneTitle.setText(ringtone.getTitle(this));
+                    Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
                     break;
                 default:
                     break;
